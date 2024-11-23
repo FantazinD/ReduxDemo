@@ -1,6 +1,5 @@
 const { produce } = require("immer");
 const redux = require("redux");
-const reduce = require("immer").produce;
 
 const initialState = {
     name: "Paulo",
