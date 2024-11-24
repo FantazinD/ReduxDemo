@@ -8,8 +8,8 @@ const cakeSlice = createSlice({
     name: "cake",
     initialState,
     reducers: {
-        ordered: (state) => state.numOfCakes--,
-        restocked: (state, action) => (state.numOfCakes += action.payload),
+        ordered: (state) => void state.numOfCakes--,
+        restocked: (state, action) => void (state.numOfCakes += action.payload),
     },
 });
 
