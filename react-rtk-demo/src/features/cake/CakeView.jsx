@@ -12,7 +12,7 @@ const CakeView = () => {
             <h2>Number of cakes - {numOfCakes}</h2>
             <button onClick={() => dispatch(ordered())}>Order cake</button>
             <input type="number" value={value} onChange={(e) => setValue(parseInt(e.target.value))} />
-            <button onClick={() => dispatch(restocked(5))}>Restock cakes</button>
+            <button onClick={() => dispatch(restocked(value))}>Restock cakes</button>
         </div>
     );
 };
